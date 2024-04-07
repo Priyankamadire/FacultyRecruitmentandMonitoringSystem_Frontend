@@ -1,0 +1,37 @@
+.box-model {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px;
+  }
+  
+  .notification-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notification-item {
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Keeping the box model color */
+    border: 1px solid #ccc; /* Slightly lighter border color */
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .notification-content {
+    margin: 0;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .user-name {
+    color: #007bff; /* You can change the color to fit your design */
+    font-weight: bold;
+  }
+  

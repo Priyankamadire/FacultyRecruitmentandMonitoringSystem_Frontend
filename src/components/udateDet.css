@@ -1,0 +1,146 @@
+/* .update-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .update-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .update-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .update-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .update-button:hover {
+    background-color: #45a049;
+  }
+  .update-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .update-item input {
+    margin-right: 10px;
+  }
+  
+  .update-button {
+    margin-left: 10px;
+  }
+  .update-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: calc(100% - 120px); 
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100px; 
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: green;
+  }
+   */
+   .update-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    fontFamily: 'cursive';
+    color: 'skyblue'
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: calc(100% - 120px); /* Adjust width as needed */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100px; /* Adjust width as needed */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: green;
+  }
+  
