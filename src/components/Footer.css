@@ -20,5 +20,9 @@
     font-size: 20px; /* Adjust the icon size as needed */
 }
 
-  
-  
+.footer-text {
+    margin: 0; /* Remove default margin */
+    color: white; /* Change the text color as needed */
+    font-size: 0.8rem; /* Adjust text size */
+    text-align: right; /* Right align text */
+}

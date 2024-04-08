@@ -72,7 +72,7 @@ const Clgsignup = () => {
                                     <label htmlFor="clgphone">
                                         <i className="zmdi zmdi-phone-in-talk materials-icons-name"></i>
                                     </label>
-                                    <input type="number" name="clgphone" id="clgphone" autoComplete="off"
+                                    <input type="text" name="clgphone" id="clgphone" autoComplete="off"
                                         value={user.clgphone} onChange={handleInputs}
                                         placeholder="clgphone" />
                                 </div>

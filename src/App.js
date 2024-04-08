@@ -49,6 +49,7 @@ import axios from 'axios';
 import UserHome from './components/UserHome';
 import ClgHome from './components/ClgHome';
 import Footer from './components/Footer';
+import DeleteJob from './components/DeleteJob';
 export const UserContext = createContext();
 export const ClgContext = createContext();
 
@@ -149,6 +150,8 @@ const App =()=> {
                                 <Route path="jobpost" element={<><ClgNavbar/><Postjob /></>} />
                                 <Route path="clghome" element={<><ClgNavbar/><ClgHome /></>} />
                                 <Route path="clgprofile" element={<><ClgNavbar/>< ClgProfile /></>} />
+                                <Route path="delejob/:id" element={<><ClgNavbar/>< DeleteJob /></>} />
+
                             </>
                         ) : (
                             <Route path="*" element={<><Navbar/><Home/></>} />

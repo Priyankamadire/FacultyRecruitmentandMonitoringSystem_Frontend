@@ -12,8 +12,8 @@ const Login = () => {
       };
     const {state,dispatch} = useContext(UserContext);
     const navigate = useNavigate();
-    const [email, setEmail] = useState('kavya@gmail.com');
-    const [password, setPassword] = useState('karthik');
+    const [email, setEmail] = useState('madirepriyanka01@gmail.com');
+    const [password, setPassword] = useState('priyanka');
     // const { login } = useAuth();
     // console.log(login);
     const loginUser = async (e) => {

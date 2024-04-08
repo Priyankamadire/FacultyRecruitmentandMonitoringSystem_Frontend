@@ -7,9 +7,9 @@ import { ClgContext } from '../App';
 const Clglogin = () => {
     const {clgstate,clgdispatch} = useContext(ClgContext);
     const navigate = useNavigate();
-    const [clgemail, setEmail] = useState('ngit@gmail.com');
-    const [clgcode,setCode] = useState('ngit-24');
-    const [password, setPassword] = useState('karthik');
+    const [clgemail, setEmail] = useState('kmit@gmail.com');
+    const [clgcode,setCode] = useState('kmit2007');
+    const [password, setPassword] = useState('kmit1234');
 
 
     const loginUser = async (e) => {

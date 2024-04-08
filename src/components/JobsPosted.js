@@ -101,6 +101,8 @@ const JobsPosted = () => {
                   <th>Experience</th>
                   <th>Department</th>
                   <th>View Applicant Details</th>
+                  <th>Delete Job</th>
+
                 </tr>
               </thead>
               <tbody className="tbody-white"> {/* Set tbody color */}
@@ -113,6 +115,12 @@ const JobsPosted = () => {
                     <td>{job.experience}</td>
                     <td>{job.department}</td>
                     <td><NavLink to={`/applicantdetails/${job._id}`}>VIEW</NavLink></td>
+                    <td>
+    <button className="btn btn-danger">
+        <NavLink className="text-light" to={`/delejob/${job._id}`}>Delete</NavLink>
+    </button>
+</td>
+
                   </tr>
                 ))}
               </tbody>
