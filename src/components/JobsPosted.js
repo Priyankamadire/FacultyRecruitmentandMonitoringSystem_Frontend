@@ -117,7 +117,7 @@ const JobsPosted = () => {
                     <td><NavLink to={`/applicantdetails/${job._id}`}>VIEW</NavLink></td>
                     <td>
     <button className="btn btn-danger">
-        <NavLink className="text-light" to={`/delejob/${job._id}`}>Delete</NavLink>
+        <NavLink className="text-light" to={`/delejob/${job._id}`} style={{ textDecoration: 'none' }}>Delete</NavLink>
     </button>
 </td>
 

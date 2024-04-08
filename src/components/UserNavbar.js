@@ -84,7 +84,7 @@ const UserNavbar = () => {
           </li>
           <li className="nav-item me-3">
             <NavLink className="nav-link  bi bi-arrow-left-circle-fill text-light" to="/logout" onClick={closeNavbar}>
-              Logout
+              Logout({userData.name})
             </NavLink>
           </li>
         </>

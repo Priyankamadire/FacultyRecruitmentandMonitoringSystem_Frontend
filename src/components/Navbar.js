@@ -91,6 +91,11 @@ useEffect(() => {
               About
             </NavLink>
           </li>
+          <li className="nav-item me-3">
+            <NavLink className="nav-link bi bi-file-earmark-post text-light" to="/vacancies" onClick={closeNavbar}>
+              Vacancies
+            </NavLink>
+          </li>
           <li className="nav-item nav-item me-3">
             <NavLink className="nav-link bi bi-patch-question-fill  text-light" to="/faqs" onClick={closeNavbar}>
               FAQs

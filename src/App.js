@@ -113,6 +113,8 @@ const App =()=> {
                         <Route path="clglogin" element={<><Navbar/><Clglogin /></>} />
                         <Route path="signup" element={<><Navbar/><Signup /></>} />
                         <Route path="clgsignup" element={<><Navbar/><Clgsignup /></>} />
+                        <Route path="vacancies" element={<><Navbar/><Vacancies /></>} />
+
 
                         {/* Define routes for user-specific pages if user is logged in */}
                         { state? (
@@ -151,6 +153,8 @@ const App =()=> {
                                 <Route path="clghome" element={<><ClgNavbar/><ClgHome /></>} />
                                 <Route path="clgprofile" element={<><ClgNavbar/>< ClgProfile /></>} />
                                 <Route path="delejob/:id" element={<><ClgNavbar/>< DeleteJob /></>} />
+                                
+
 
                             </>
                         ) : (
