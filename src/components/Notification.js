@@ -42,7 +42,7 @@ useEffect(() => {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/myennotification/${email}`, { // Fetching notifications based on email only
+        const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/myennotification/${email}`, { // Fetching notifications based on email only
           method: 'GET',
           headers: {
             Accept: 'application/json',
