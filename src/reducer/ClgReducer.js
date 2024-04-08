@@ -8,7 +8,7 @@ export const clgreducer = (clgstate,action)=>{
 }
 
 // export const myState = () => {
-//     // Retrieve the token from the cookie
+
 //     const token = document.cookie.replace(/(?:(?:^|.*;\s*)jwt_token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
     
 //     // Initialize state with the token, if available
