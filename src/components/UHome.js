@@ -5,7 +5,7 @@ const UHome = () => {
   
   const callHomePage = async () => {
     try {
-      const res = await fetch('http://localhost:5000/getusername', {
+      const res = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/getusername', {
         method: 'GET',
         headers: {
           Accept: 'application/json',

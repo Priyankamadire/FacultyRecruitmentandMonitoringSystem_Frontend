@@ -15,7 +15,7 @@ const Clglogin = () => {
     const loginUser = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/clg-signin', {
+            const res = await axios.post('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clg-signin', {
                 clgemail,
                 clgcode,
                 password

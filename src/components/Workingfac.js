@@ -12,7 +12,7 @@ const Workingfac = () => {
   useEffect(() => {
     const fetchFacultyDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/wofaculty/${collegeId}`);
+        const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/wofaculty/${collegeId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch faculty details');
         }

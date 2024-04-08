@@ -12,7 +12,7 @@ const JobTable = () => {
         const fetchJobs = async () => {
             try {
                 // Fetch all jobs from backend API
-                const response = await fetch("http://localhost:5000/jobs", {
+                const response = await fetch("https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/jobs", {
                     method: "GET",
                     headers: {
                         Accept: 'application/json',

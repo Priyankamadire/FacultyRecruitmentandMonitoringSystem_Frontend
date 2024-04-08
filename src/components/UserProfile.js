@@ -8,7 +8,7 @@ const UserProfile = () => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch('http://localhost:5000/aboutpage', {
+      const res = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/aboutpage', {
         method: "GET",
         headers: {
           Accept: 'application/json',

@@ -10,7 +10,7 @@ const UserNavbar = () => {
   const [userData,setUserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch('http://localhost:5000/aboutpage', {
+      const res = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/aboutpage', {
         method: 'GET',
         headers: {
           // 'Authorization': `Bearer ${token}`,

@@ -6,7 +6,7 @@ const Logout = () => {
     const {clgstate,clgdispatch} = useContext(ClgContext);
     const navigate = useNavigate;
     useEffect(()=>{
-        fetch('http://localhost:5000/clg-log-out',{
+        fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clg-log-out',{
             method:"GET",
             headers : {
                 Accept : "appllication/json",

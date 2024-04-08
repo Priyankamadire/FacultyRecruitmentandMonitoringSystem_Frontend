@@ -14,7 +14,7 @@ const JobsPosted = () => {
             try {
                 const token = localStorage.getItem('jwt_token');
 
-                const response = await fetch(`http://localhost:5000/clgs/clgjobs/${instname}`, {
+                const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clgs/clgjobs/${instname}`, {
                     method: "GET",
                     headers: {
                         "Authorization": `Bearer ${token}`,
@@ -52,7 +52,7 @@ const JobsPosted = () => {
     useEffect(() => {
         const fetchJobDetails = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/clgjobs/${id}`, {
+                const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clgjobs/${id}`, {
                     method: 'GET',
                     headers: {
                         "Accept": 'application/json',

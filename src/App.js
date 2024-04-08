@@ -61,7 +61,7 @@ const App =()=> {
     useEffect(() => {
         const token = Cookies.get('token');
         if (token) {
-            axios.post('http://localhost:5000/verify', { token })
+            axios.post('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/verify', { token })
                 .then(response => {
                     dispatch({ type: "USER", payload: response.data.authenticated });
                 })
@@ -80,7 +80,7 @@ const App =()=> {
     useEffect(() => {
         const token = Cookies.get('clgToken'); // Assuming you use 'clgToken' for college authentication
         if (token) {
-            axios.post('http://localhost:5000/clgverify', { token }) // Adjust the endpoint URL accordingly
+            axios.post('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clgverify', { token }) // Adjust the endpoint URL accordingly
                 .then(response => {
                     clgdispatch({ type: "CLG", payload: response.data.authenticated });
                 })

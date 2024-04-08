@@ -203,7 +203,7 @@ const UpdateDetails = () => {
 
   const handleNameUpdate = async () => {
     try {
-      const response = await fetch('http://localhost:5000/update-name', {
+      const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-name', {
         method: "PATCH",
         headers: {
           Accept: 'application/json',
@@ -226,7 +226,7 @@ const UpdateDetails = () => {
   };
   const handlePhoneUpdate = async () => {
     try {
-      const response = await fetch('http://localhost:5000/update-phone', {
+      const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-phone', {
         method: "PATCH",
         headers: {
           Accept: 'application/json',
@@ -251,7 +251,7 @@ const UpdateDetails = () => {
 
   const handleEmailUpdate = async () => {
     try {
-      const response = await fetch('http://localhost:5000/update-email', {
+      const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-email', {
         method: "PATCH",
         headers: {
           Accept: 'application/json',
@@ -281,7 +281,7 @@ const UpdateDetails = () => {
   
   const handleExperienceUpdate = async () => {
     try {
-        const response = await fetch('http://localhost:5000/update-experience', {
+        const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-experience', {
           method: "PATCH",
           headers: {
             Accept: 'application/json',
@@ -313,7 +313,7 @@ const UpdateDetails = () => {
 
   const handlePasswordUpdate = async () => {
     try {
-      const response = await fetch('http://localhost:5000/update-password', {
+      const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-password', {
         method: "PATCH",
         headers: {
           Accept: 'application/json',

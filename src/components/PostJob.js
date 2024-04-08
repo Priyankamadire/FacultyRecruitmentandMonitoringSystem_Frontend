@@ -27,7 +27,7 @@ const PostJob = () => {
     e.preventDefault();
     const { postavailable, qualification, experience, department, jobid, date } = admin;
     try {
-      const res = await fetch("http://localhost:5000/postingjob", {
+      const res = await fetch("https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/postingjob", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`,

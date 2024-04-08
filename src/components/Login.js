@@ -22,7 +22,7 @@ const Login = () => {
             const token = Cookies.get('token');
             // const token = document.cookie.replace(/(?:(?:^|.*;\s*)jwtoken\s*\=\s*([^;]*).*$)|^.*$/, "$1");
             // const token = localStorage.getItem('token');
-            const res = await axios.post('http://localhost:5000/signin', {
+            const res = await axios.post('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/signin', {
                 email,
                 password
             }, {

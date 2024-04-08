@@ -9,7 +9,7 @@ const Myprofile = () => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('token'); // Assuming the token is stored in localStorage
-        const response = await fetch('http://localhost:5000/myprofile', {
+        const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/myprofile', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

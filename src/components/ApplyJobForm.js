@@ -28,7 +28,7 @@ const ApplyJobForm = () => {
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
-        const res = await fetch('http://localhost:5000/aboutpage', {
+        const res = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/aboutpage', {
           method :"GET",
           headers: {
             Accept: 'application/json',
@@ -51,7 +51,7 @@ const ApplyJobForm = () => {
   useEffect(() => {
     const fetchJobDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/jobs/${id}`, {
+        const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/jobs/${id}`, {
           method: "GET",
           headers: {
             Accept: 'application/json',
@@ -89,7 +89,7 @@ const ApplyJobForm = () => {
     e.preventDefault();
     const { name,email, age, postavailable, qualification, experience, department, resume } = apply;
     try {
-      const res = await fetch(`http://localhost:5000/apply/${id}`, {
+      const res = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/apply/${id}`, {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`,

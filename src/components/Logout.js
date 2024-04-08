@@ -7,7 +7,7 @@ const Logout = () => {
   const navigate = useNavigate(); // Call useNavigate as a function
 
   useEffect(() => {
-    fetch('http://localhost:5000/log-out', {
+    fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/log-out', {
       method: "GET",
       headers: {
         Accept: "application/json",

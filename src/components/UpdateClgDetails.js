@@ -15,7 +15,7 @@ const UpdateClgDetails = () => {
   
     const handleNameUpdate = async () => {
       try {
-        const response = await fetch('http://localhost:5000/update-clgname', {
+        const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-clgname', {
           method: "PATCH",
           headers: {
             Accept: 'application/json',
@@ -39,7 +39,7 @@ const UpdateClgDetails = () => {
     };
     const handlePhoneUpdate = async () => {
       try {
-        const response = await fetch('http://localhost:5000/update-clgphone', {
+        const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-clgphone', {
           method: "PATCH",
           headers: {
             Accept: 'application/json',
@@ -64,7 +64,7 @@ const UpdateClgDetails = () => {
   
     const handleEmailUpdate = async () => {
       try {
-        const response = await fetch('http://localhost:5000/update-clgemail', {
+        const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-clgemail', {
           method: "PATCH",
           headers: {
             Accept: 'application/json',
@@ -94,7 +94,7 @@ const UpdateClgDetails = () => {
     
     const handleCodeUpdate = async () => {
       try {
-          const response = await fetch('http://localhost:5000/update-clgcode', {
+          const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-clgcode', {
             method: "PATCH",
             headers: {
               Accept: 'application/json',
@@ -130,7 +130,7 @@ const UpdateClgDetails = () => {
       //   console.error('Error updating password:', error);
       // }
       try {
-          const response = await fetch('http://localhost:5000/update-clgpassword', {
+          const response = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/update-clgpassword', {
             method: "PATCH",
             headers: {
               Accept: 'application/json',

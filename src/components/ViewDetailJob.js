@@ -11,7 +11,7 @@ const ViewDetailJob = () => {
         console.log("ViewDetailJob component mounting...");
         const fetchJobDetails = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/jobs/${id}`, {
+                const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/jobs/${id}`, {
                     method: "GET",
                     headers: {
                         Accept: 'application/json',

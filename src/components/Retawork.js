@@ -31,7 +31,7 @@ const Retawork = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/rofaculty/${id}`, {
+        const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/rofaculty/${id}`, {
           method: 'GET',
           headers: {
             Accept: 'application/json',
@@ -66,7 +66,7 @@ const Retawork = () => {
   const PostData = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:5000/rfaculty/${id}`, {
+      const res = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/rfaculty/${id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

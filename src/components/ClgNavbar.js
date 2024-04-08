@@ -10,7 +10,7 @@ const ClgNavbar = () => {
   // const show = true;
 const callHomePage = async () => {
   try {
-    const res = await fetch('http://localhost:5000/getclgusername', {
+    const res = await fetch('https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/getclgusername', {
       method: 'GET',
       headers: {
         Accept: 'application/json',

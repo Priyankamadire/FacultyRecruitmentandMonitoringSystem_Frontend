@@ -31,7 +31,7 @@ const Fackwork = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/wofaculty/${id}`, {
+        const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/wofaculty/${id}`, {
           method: 'GET',
           headers: {
             Accept: 'application/json',
@@ -66,7 +66,7 @@ const Fackwork = () => {
   const PostData = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:5000/wfaculty/${id}`, {
+      const res = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/wfaculty/${id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

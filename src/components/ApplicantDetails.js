@@ -14,7 +14,7 @@ const ApplicantDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const responseApplicants = await fetch(`http://localhost:5000/applicants/${id}`, {
+        const responseApplicants = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/applicants/${id}`, {
           method: 'GET',
           headers: {
             Accept: 'application/json',
@@ -29,7 +29,7 @@ const ApplicantDetails = () => {
         }
         setApplicants(responseData.applications);
 
-        const responseJobDetails = await fetch(`http://localhost:5000/clgjobs/${id}`, {
+        const responseJobDetails = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clgjobs/${id}`, {
           method: 'GET',
           headers: {
             Accept: 'application/json',
@@ -65,7 +65,7 @@ const ApplicantDetails = () => {
       const confirmed = window.confirm(`Are you sure you want to ${action} this applicant?`);
       if (!confirmed) return;
 
-      const response = await fetch(`http://localhost:5000/${action}/${email}/${id}`, {
+      const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/${action}/${email}/${id}`, {
         method: 'POST',
         headers: {
           "Authorization": `Bearer ${token}`,
@@ -97,7 +97,7 @@ const ApplicantDetails = () => {
 
   const handleDelete = async (email) => {
     try {
-      const response = await fetch(`http://localhost:5000/applicants/${id}/${email}`, {
+      const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/applicants/${id}/${email}`, {
         method: 'DELETE',
         headers: {
           Accept: 'application/json',

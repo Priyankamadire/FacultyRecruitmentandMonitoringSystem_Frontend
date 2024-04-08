@@ -23,7 +23,7 @@ const Clgsignup = () => {
         e.preventDefault();
         const { clgname, clgemail, clgphone, clgcode, password, cpassword } = user;
         try {
-            const res = await axios.post("http://localhost:5000/clg-register", {
+            const res = await axios.post("https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clg-register", {
                 clgname, clgemail, clgphone, clgcode, password, cpassword
             },
             {

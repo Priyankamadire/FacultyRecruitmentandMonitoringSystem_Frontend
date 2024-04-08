@@ -10,7 +10,7 @@ const DetailedNotification = () => {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/myynotification/${email}/${jobid}`, {
+        const response = await fetch(`https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/myynotification/${email}/${jobid}`, {
           method: 'GET',
           headers: {
             Accept: 'application/json',
