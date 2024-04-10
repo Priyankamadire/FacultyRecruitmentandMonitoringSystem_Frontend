@@ -31,17 +31,17 @@ const Details = () => {
 
   const handleClick = () => {
     // Redirect to the Facwork component with college ID (_id) as a parameter
-    navigate(`/facwork/${collegeId}`);
+    navigate(`/facwork/${data._id}`);
 
   };
   const handleONClick = () => {
     // Redirect to the Facwork component with college ID (_id) as a parameter
-    navigate(`/retwork/${collegeId}`);
+    navigate(`/retwork/${data._id}`);
 
   };
   const handlElick = () => {
     // Redirect to the Facwork component with college ID (_id) as a parameter
-    navigate(`/nework/${collegeId}`);
+    navigate(`/nework/${data._id}`);
 
   };
   
