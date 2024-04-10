@@ -1,11 +1,11 @@
 .footer {
-    position: fixed; /* Change to fixed position */
+    position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(20, 1, 129, 0.768); /* Change the background color as needed */
-    padding: 10px 0; /* Adjust the padding as needed */
-    text-align: center; /* Center the content horizontally */
-    z-index: 1000; /* Ensure footer is above other content */
+    background-color: rgba(20, 1, 129, 0.768);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
 }
 
 .footer-content {
@@ -15,14 +15,41 @@
 }
 
 .footer-logos a {
-    margin: 0 8px; /* Adjust the spacing between icons */
-    color: #ffffff; /* Change the icon color as needed */
-    font-size: 20px; /* Adjust the icon size as needed */
+    margin: 0 8px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .footer-text {
-    margin: 0; /* Remove default margin */
-    color: white; /* Change the text color as needed */
-    font-size: 0.8rem; /* Adjust text size */
-    text-align: right; /* Right align text */
+    margin: 0;
+    color: white;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+/* Media Queries for responsiveness */
+
+/* For smaller screens such as phones */
+@media (max-width: 576px) {
+    .footer-logos a {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+}
+
+/* For medium-sized screens such as tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-logos a {
+        margin: 8px 0;
+    }
+}
+
+/* For larger screens such as laptops */
+@media (min-width: 993px) {
+    .footer-content {
+        flex-direction: row;
+    }
 }

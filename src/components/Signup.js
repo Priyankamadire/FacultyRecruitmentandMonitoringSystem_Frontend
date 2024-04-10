@@ -22,28 +22,46 @@ const Signup = () => {
 
     const PostData = async (e) => {
         e.preventDefault();
-        const { name, email, phone, qualification,experience, password, cpassword } = user;
+        const { name, email, phone, qualification, experience, password, cpassword } = user;
+        
         try {
-            const res = await axios.post("https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/register", {
-                name, email, phone,qualification,experience, password, cpassword
-            },
-            {
-                withCredentials: true // Including credentials in the request
+            const res = await fetch("https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                credentials: "include", // Include credentials in the request
+                body: JSON.stringify({
+                    name,
+                    email,
+                    phone,
+                    qualification,
+                    experience,
+                    password,
+                    cpassword
+                })
             });
-            const data = res.data;
-            if (data.status === 422 || !data) {
-                window.alert("invalid");
+    
+            const data = await res.json(); // Parse response JSON
+    
+            if (data.status === 422) {
+                window.alert("Enter correct password");
                 console.log("invalid");
+            } else if (res.status === 488) {
+                window.alert('User already exists. Try creating with a new email ID.');
+            } else if (res.status === 428) {
+                window.alert('Please fill all the details');
             } else {
-                window.alert("success");
+                window.alert("Registered successfully");
                 console.log("success");
                 navigate("/login");
             }
         } catch (error) {
-            console.error(error);
-            window.alert("An error occurred. Please try again.");
+            console.error("Error registering user:", error);
+            window.alert("Registration failed. Please try again.");
         }
-    }
+    };
+    
 
     return (
         <>

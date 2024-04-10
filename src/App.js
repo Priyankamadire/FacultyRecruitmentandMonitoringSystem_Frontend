@@ -164,6 +164,9 @@ const App =()=> {
               
             </ClgContext.Provider>
         </UserContext.Provider>
+        <br/>
+        <br/>
+        
         <Footer/>
         
         </div>

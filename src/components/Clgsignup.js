@@ -23,18 +23,29 @@ const Clgsignup = () => {
         e.preventDefault();
         const { clgname, clgemail, clgphone, clgcode, password, cpassword } = user;
         try {
-            const res = await axios.post("https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clg-register", {
+            const res = await fetch("https://facultyrecruitmentandmonitoringsystem-41bq.onrender.com/clg-register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                credentials: "include",
+                body: JSON.stringify({
                 clgname, clgemail, clgphone, clgcode, password, cpassword
-            },
-            {
-                withCredentials: true // Including credentials in the request
-            });
-            const data = res.data;
-            if (data.status === 422 || !data) {
-                window.alert("invalid");
+            })
+        })
+            const data = await res.json();
+            if (res.status === 422 ) {
+                window.alert("Please fill all the details");
                 console.log("invalid");
-            } else {
-                window.alert("success");
+            }
+            else if (res.status === 423) {
+                 window.alert('User already exists. Try creating with a new email ID.');
+            }
+            else if (res.status === 425) {
+                window.alert('enter correct password');
+           }
+            else {
+                window.alert("Registered successfully");
                 console.log("success");
                 navigate("/clglogin");
             }

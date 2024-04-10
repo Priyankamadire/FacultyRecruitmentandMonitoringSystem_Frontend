@@ -1,0 +1,51 @@
+/* PostJob.css */
+
+/* Container styles */
+.post-job-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Form styles */
+  .post-job-form {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-job-title {
+    color: #007bff;
+    text-align: center;
+  }
+  
+  /* Input field styles */
+  .post-job-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+  
+  /* Button styles */
+  .post-job-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .post-job-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
