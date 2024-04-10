@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Detail.css'
+import './Detail.css';
+
 const Details = () => {
   const [collegeId, setCollegeId] = useState('');
   const navigate = useNavigate();
-  const[data,setData] = useState('');
-  
 
   const callHomePage = async () => {
     try {
@@ -21,7 +20,7 @@ const Details = () => {
       if (!res.ok) {
         throw new Error(data.error);
       }
-      setData(data)// Assuming _id is the property containing the college ID
+      setCollegeId(data); // Assuming _id is the property containing the college ID
     } catch (err) {
       console.error(err);
     }
@@ -33,18 +32,17 @@ const Details = () => {
 
   const handleClick = () => {
     // Redirect to the Facwork component with college ID (_id) as a parameter
-    navigate(`/facwork/${data._id}`);
-
+    navigate(`/facwork/${collegeId._id}`);
   };
+
   const handleONClick = () => {
     // Redirect to the Facwork component with college ID (_id) as a parameter
-    navigate(`/retwork/${data._id}`);
-
+    navigate(`/retwork/${collegeId._id}`);
   };
+
   const handlElick = () => {
     // Redirect to the Facwork component with college ID (_id) as a parameter
-    navigate(`/nework/${data._id}`);
-
+    navigate(`/nework/${collegeId._id}`);
   };
   
   return (
