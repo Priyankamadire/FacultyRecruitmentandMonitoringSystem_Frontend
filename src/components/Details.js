@@ -4,6 +4,8 @@ import './Detail.css'
 const Details = () => {
   const [collegeId, setCollegeId] = useState('');
   const navigate = useNavigate();
+  const[data,setData] = useState('');
+  
 
   const callHomePage = async () => {
     try {
@@ -19,7 +21,7 @@ const Details = () => {
       if (!res.ok) {
         throw new Error(data.error);
       }
-      setCollegeId(data._id); // Assuming _id is the property containing the college ID
+      setData(data)// Assuming _id is the property containing the college ID
     } catch (err) {
       console.error(err);
     }
